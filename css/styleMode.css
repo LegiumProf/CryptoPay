@@ -1,0 +1,135 @@
+body {
+    background-color: #0D0D12;
+    color: white !important;
+}
+
+/* --- header --- */
+header {
+    & ul {
+        & li {
+            a {
+                text-decoration: none;
+                color: white;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+    & .header__right {
+        .get_started {
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        .get_started:hover {
+            background-color: transparent;
+            opacity: 0.6;
+        }
+        #style_mode__night {
+            display: block;
+        }
+        #style_mode__sun {
+            display: none;
+        }
+    }
+}
+/* --- header --- */
+
+/* --- welcome --- */
+
+.welcome {
+    & .welcome__left {
+        & .welcome__left__bots {
+            & ul {
+                & li {
+                    img {
+                        border: 8px solid #0D0D12;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* --- welcome --- */
+
+/* --- UseCasesClass --- */
+
+.UseCasesClass {
+    background-color: #18181D;
+}
+
+/* --- UseCasesClass --- */
+
+/* --- features --- */
+.features {
+    .features__cryptorange, .features__oneclick, .features__payment, .features__exchange, .features__send, .send__video, .features__anonymous {
+        background-color: #18161C;
+    }
+    .features__cryptorange {
+        ul {
+            li {
+                p {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+    }
+    
+
+    & .features__oneclick {
+        & .oneclick__video {
+            overflow: hidden;
+            video {
+                margin-left: -2px;
+            }
+        }
+    }
+    & .features__send {
+        & .send__video {
+            overflow: hidden;
+            video {
+                margin-left: -2px;
+            }
+        }
+    }
+}
+/* --- features --- */
+
+/* --- quickStart --- */
+.quickStart {
+    background-color: #18181D;
+    .dot {
+        background: white !important;
+        color: black !important; 
+    }
+    & .quickStart__grid {
+        & .quickStart__TextLeft {
+            & ul {
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+        
+}
+/* --- quickStart --- */
+
+/* --- api --- */
+.api {
+    background-color: #0D0D12;
+    & .joinCommunity {
+        h4 {
+            color: white;
+        }
+    }
+}
+/* --- api --- */
+
+/* --- footer --- */
+footer {
+    background-color: #18181D;
+}
+/* --- footer --- */

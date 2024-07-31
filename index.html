@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoPay</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Font/font.css">
+    <link rel="stylesheet" href="./css/mobilestyle.css">
+    <link id="theme-link" rel="stylesheet" href="">
+
+    <script src="./js/app.js" defer></script>
+
+    <link rel="icon" href="./favicon/favicon-32x32.png"> <!-- 32×32 -->
+    <link rel="icon" href="./favicon/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./favicon/apple-icon-180x180.png">  <!-- 180×180 -->
+    <link rel="manifest" href="./favicon/manifest.webmanifest">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="content">
+            <header>
+                <div class="icon">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11590_1124)">
+                        <path d="M0 0H64V64H0V0Z" fill="#44A3DD"/>
+                        <path d="M12.5003 23H25.6761C26.6657 23 27.576 23.5414 28.0485 24.4109L39.7799 46H24.0819C23.0923 46 22.182 45.4586 21.7095 44.5891L11.1823 25.2162C10.7868 24.4883 11.0562 23.5776 11.7841 23.182C12.0039 23.0626 12.2501 23 12.5003 23Z" fill="#BEE5F7"/>
+                        <path d="M51.591 23C51.8412 23 52.0874 23.0626 52.3072 23.182C53.013 23.5656 53.2878 24.4336 52.9431 25.1495L52.909 25.2162L42.3818 44.5891C41.9246 45.4306 41.0573 45.9647 40.1049 45.9983L40.0094 46H24.556H24.0819L23.9861 45.9983C23.4884 45.9807 23.0139 45.8264 22.609 45.5629C22.8119 45.6794 23.0415 45.7544 23.2863 45.7765C23.3124 45.7789 23.5223 45.7983 23.7558 45.7356C23.8546 45.7091 24.2192 45.624 24.6056 45.2626C24.7212 45.1545 24.8827 44.9225 25.0903 44.5664L36.0428 24.4109C36.5001 23.5694 37.3673 23.0353 38.3197 23.0017L38.4152 23H51.591Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11590_1124">
+                        <rect width="64" height="64" rx="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>       
+                </div>
+
+                <ul class="header__nav">
+                    <li><a href="#UseCases">Use cases</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#quickStart">How to start</a></li>
+                </ul>
+        
+                <div class="header__right">
+                    
+        
+                    <button class="style_mode">
+                        <svg id="style_mode__sun" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_24718_31)">
+                            <path d="M16.0002 22.6666C19.6821 22.6666 22.6668 19.6818 22.6668 15.9999C22.6668 12.318 19.6821 9.33325 16.0002 9.33325C12.3183 9.33325 9.3335 12.318 9.3335 15.9999C9.3335 19.6818 12.3183 22.6666 16.0002 22.6666Z" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 1.33325V3.99992" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 28V30.6667" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.62646 5.62671L7.5198 7.52004" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24.48 24.48L26.3733 26.3733" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.3335 16H4.00016" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28 16H30.6667" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.62646 26.3733L7.5198 24.48" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24.48 7.52004L26.3733 5.62671" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_24718_31">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg> 
+                        <svg id="style_mode__night" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28 17.0533C27.7902 19.3229 26.9385 21.4859 25.5443 23.2891C24.1502 25.0922 22.2713 26.4611 20.1276 27.2354C17.9839 28.0097 15.664 28.1575 13.4393 27.6615C11.2147 27.1654 9.17732 26.0461 7.56562 24.4344C5.95393 22.8227 4.83458 20.7853 4.33853 18.5607C3.84249 16.336 3.99028 14.0161 4.7646 11.8724C5.53893 9.72868 6.90776 7.84982 8.71094 6.45567C10.5141 5.06152 12.6771 4.20974 14.9467 4C13.6179 5.79769 12.9785 8.0126 13.1447 10.2419C13.3109 12.4712 14.2718 14.5667 15.8525 16.1475C17.4332 17.7282 19.5288 18.689 21.7581 18.8553C23.9874 19.0215 26.2023 18.3821 28 17.0533Z" stroke="white" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                    </button>
+                    <button class="get_started">Get started</button>
+                </div>
+                
+            </header>
+
+            <div class="welcome"><!-- welcome -->
+                <div class="welcome__left">
+                    <div class="welcome__left__title">
+                        <h1>Crypto payments for <span>Telegram bots</span></h1>
+                        <h4>Seamlessly accept crypto payments <br> in your Telegram bots and services.</h4>
+                        <button class="welcome__button">Get started</button>
+                    </div>
+                    <div class="welcome__left__bots">
+                        <ul>
+                            <li><img src="./img/1.jpg" alt=""></li>
+                            <li><img src="./img/2.jpg" alt=""></li>
+                            <li><img src="./img/3.jpg" alt=""></li>
+                            <li><img src="./img/4.jpg" alt=""></li>
+                            <li><img src="./img/5.jpg" alt=""></li>
+                        </ul>
+                        <h4>Popular bots use Crypto Pay</h4>
+                    </div>
+                </div>
+                <div class="welcome__right">
+                    <div class="welcome__right__phone"></div>
+                </div>
+            </div><!-- welcome -->
+
+            
+
+            
+
+        </div><!-- content -->
+        
+        <div class="UseCasesClass" id="UseCases"><!-- UseCases -->
+            <div class="content">
+                <div class="slider">
+                    <div class="slide" id="slide-1">
+                        <img src="./img/case-1.webp" alt="">
+                        <div class="slide__p">
+                            <div class="slide__p__container">
+                                <h2><span>Instant Auto Sales:<br></span> Boost conversion</h2>
+                                <h4>Immediately deliver digital products <br> and services to your users.</h4>
+                            </div>
+                            
+                            <button>Open API Docs</button>
+                        </div>
+                    </div>
+                    <div class="slide" id="slide-2">
+                        <img src="./img/case-2.webp" alt="">
+                        <div class="slide__p">
+                            <div class="slide__p__container">
+                                <h2><span>Channels integration:<br></span> Seamless access</h2>
+                                <h4>Automatically unlock exclusive content <br>to your users.</h4>
+                            </div>
+                            
+                            <button>Open API Docs</button>
+                        </div>
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <img src="./img/case-3.webp" alt="">
+                        <div class="slide__p">
+                            <div class="slide__p__container">
+                                <h2><span>Endless customization: <br></span> with Webhooks</h2>
+                                <h4>Receive successful payment notifications in real-time. Integrate to any scenario of your service.</h4>
+                            </div>
+                            
+                            <button>Open API Docs</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <p>01</p>
+                    <button class="slider__button1"></button>
+                    <button class="slider__button2"></button>
+                    <button class="slider__button3"></button>
+                    <p>03</p>
+                </div>
+                
+            </div>
+        </div><!-- UseCases -->
+
+
+        <div class="content"><!-- content -->
+            <div class="features" id="features"><!-- features -->
+                <div class="features__cryptorange">
+                    <h3>Accept a wide range of cryptocurrencies</h3>
+                    <h4>Bill any supported cryptocurrencies with asset parameter in <a href="https://help.crypt.bot/crypto-pay-api#getCurrencies">GetInvoice</a> method</h4>
+                    <ul class="cryptorange__ul">
+                        <li>
+                            <svg id="cryptorange__ETH" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="96" height="96" rx="48" fill="url(#paint0_linear_955_4317)"/>
+                                <rect width="96" height="96" rx="48" fill="url(#paint1_linear_955_4317)"/>
+                                <path d="M47.7656 16.582L47.332 18.0186V59.6998L47.7656 60.1217L67.6018 48.6852L47.7656 16.582Z" fill="#343434"/>
+                                <path d="M47.7624 16.582L27.9258 48.6852L47.7624 60.1217V39.8908V16.582Z" fill="#8C8C8C"/>
+                                <path d="M47.7639 63.7846L47.5195 64.0753V78.9227L47.7639 79.6186L67.6122 52.354L47.7639 63.7846Z" fill="#3C3C3B"/>
+                                <path d="M47.7624 79.6186V63.7846L27.9258 52.354L47.7624 79.6186Z" fill="#8C8C8C"/>
+                                <path d="M47.7617 60.1206L67.5979 48.684L47.7617 39.8896V60.1206Z" fill="#141414"/>
+                                <path d="M27.9258 48.6842L47.7624 60.1207V39.8898L27.9258 48.6842Z" fill="#393939"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_955_4317" x1="147.491" y1="-39.2727" x2="-37.5273" y2="145.745" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#E9E9E7"/>
+                                <stop offset="0.271524" stop-color="#EFEEEC"/>
+                                <stop offset="0.608677" stop-color="#EEEEEC"/>
+                                <stop offset="1" stop-color="#D5D4D0"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_955_4317" x1="-1.82758" y1="178.969" x2="111.061" y2="154.577" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EEEDF1"/>
+                                <stop offset="1" stop-color="white"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__ETH_p">ETH</p> 
+                        </li>
+                        <li>
+                            <svg id="cryptorange__USDT" width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.714294" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4327)"/>
+                                <path d="M71.5021 22.6909H25.308V33.8431H42.829V50.2347H53.9811V33.8431H71.5021V22.6909Z" fill="white"/>
+                                <path d="M48.5112 51.9808C34.0173 51.9808 22.2666 49.6869 22.2666 46.8569C22.2666 44.0274 34.0168 41.7331 48.5112 41.7331C63.0051 41.7331 74.7553 44.0274 74.7553 46.8569C74.7553 49.6869 63.0051 51.9808 48.5112 51.9808ZM77.9795 47.7111C77.9795 44.0621 64.7862 41.1042 48.5112 41.1042C32.2367 41.1042 19.0424 44.0621 19.0424 47.7111C19.0424 50.9246 29.273 53.6019 42.8297 54.1951V77.7258H53.9809V54.2044C67.642 53.6297 77.9795 50.9412 77.9795 47.7111Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_955_4327" x1="9.87793" y1="131.782" x2="57.4416" y2="30.5454" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8DDAD5"/>
+                                <stop offset="1" stop-color="#1BA27A"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__USDT_p">USDT</p> 
+                        </li>
+                        <li>
+                            <svg id="cryptorange__TON" width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.428589" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4333)"/>
+                                <path d="M64.8176 26.7903H32.0375C26.0104 26.7903 22.1905 33.2917 25.2226 38.5475L45.4532 73.6129C46.7733 75.9025 50.0817 75.9025 51.4019 73.6129L71.6367 38.5475C74.6648 33.3001 70.8447 26.7903 64.8217 26.7903H64.8176ZM45.4367 63.0973L41.0308 54.5703L30.3999 35.5566C29.6986 34.3397 30.5648 32.7802 32.0334 32.7802H45.4326V63.1014L45.4367 63.0973ZM66.447 35.5525L55.8201 54.5744L51.4143 63.0973V32.7761H64.8135C66.2821 32.7761 67.1483 34.3355 66.447 35.5525Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_955_4333" x1="89.8831" y1="-7.41818" x2="14.3922" y2="117.382" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#04BEFE"/>
+                                <stop offset="1" stop-color="#4481EB"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__TON_p">TON</p>
+                        </li>
+                        <li>
+                            <svg id="cryptorange__BTC" width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.142883" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4337)"/>
+                                <path d="M71.2641 41.0905C72.3168 34.0423 66.9488 30.2551 59.6032 27.7264L61.9828 18.1746L56.1718 16.7269L53.8557 26.0239C52.33 25.6438 50.76 25.2832 49.2014 24.9299L51.5328 15.5713L45.7218 14.1236L43.3402 23.6663C42.0756 23.3774 40.8316 23.0937 39.6266 22.7936L39.6338 22.7648L31.6195 20.7639L30.0727 26.9728C30.0727 26.9728 34.3867 27.9602 34.2932 28.0199C36.6497 28.6069 37.0746 30.1626 37.0026 31.398L34.2922 42.2781C34.4567 42.319 34.6644 42.3795 34.8947 42.4718L34.282 42.3192L30.4806 57.5609C30.1934 58.2754 29.4635 59.3469 27.8174 58.9412C27.8751 59.0254 23.5939 57.889 23.5939 57.889L20.7092 64.542L28.2762 66.4271C29.6827 66.7775 31.0625 67.1474 32.4176 67.4937L30.0155 77.1535L35.8224 78.6002L38.203 69.0442C39.7863 69.4735 41.3254 69.8701 42.8347 70.2461L40.4613 79.7558L46.2723 81.2034L48.6734 71.5652C58.5841 73.4402 66.045 72.683 69.1785 63.7164C71.7061 56.4984 69.0536 52.3309 63.8376 49.6166C67.6402 48.7472 70.5028 46.2505 71.2641 41.0905ZM57.9852 59.7139C56.1875 66.9302 44.0332 63.0333 40.0893 62.0508L43.2781 49.2505C47.22 50.2412 59.8598 52.1891 57.9852 59.7139ZM59.7771 40.9845C58.1412 47.5512 48.0186 44.2128 44.7357 43.3993L47.6264 31.7956C50.9124 32.6142 61.4868 34.1392 59.7771 40.9845Z" fill="white"/>
+                                <path d="M34.3657 42.0254L35.2294 42.2405L35.0706 42.8779L34.2069 42.6627L34.3657 42.0254Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_955_4337" x1="-16.4389" y1="163.2" x2="78.6883" y2="3.29727e-06" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF930F"/>
+                                <stop offset="1" stop-color="#FBC411"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__BTC_p">BTC</p>
+                        </li>
+                        <li>
+                            <svg id="cryptorange__TRX" width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.857178" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4343)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M75.8848 39.4775C74.7421 38.4224 73.4173 37.1361 72.0368 35.7957C70.0977 33.913 68.0488 31.9236 66.2404 30.3186L66.0573 30.1904C65.7525 29.9456 65.4089 29.7537 65.0406 29.6225L63.6447 29.3621C54.0146 27.5652 22.8008 21.741 22.1587 21.8191C21.9688 21.8457 21.7872 21.9146 21.6275 22.0206L21.4535 22.158C21.2392 22.3756 21.0764 22.6385 20.9772 22.9274L20.9314 23.0464V23.6967V23.7975C23.0506 29.6984 28.5556 42.8766 33.6386 55.0446L33.6387 55.0448L33.6387 55.0449L33.6388 55.0451C37.9362 65.3324 41.9319 74.8975 43.3249 78.7325L43.3254 78.7341C43.5087 79.3023 43.8567 80.3811 44.5064 80.436H44.6529C45.001 80.436 46.4847 78.476 46.4847 78.476C46.4847 78.476 73.0089 46.31 75.6924 42.8846C76.0398 42.4626 76.3465 42.0088 76.6083 41.5291C76.7443 40.7656 76.4696 39.9868 75.8848 39.4775ZM53.2908 43.2233L64.6112 33.8354L71.2514 39.9536L53.2908 43.2233ZM29.4041 26.6367L48.8942 42.6098L60.9381 32.4526L29.4041 26.6367ZM50.6524 46.7954L70.6005 43.5806L47.7948 71.0573L50.6524 46.7954ZM47.2624 45.6319L26.7556 28.23L44.2949 71.0753L47.2624 45.6319Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_955_4343" x1="63.6935" y1="13.9636" x2="0.857181" y2="143.127" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FC070C"/>
+                                <stop offset="1" stop-color="#F45C43"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__TRX_p">TRX</p>
+                        </li>
+                        <li>
+                            <svg id="cryptorange__LTC" width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_955_5686)">
+                                <path d="M48.5714 90.8049C72.2119 90.8049 91.3763 71.6405 91.3763 48C91.3763 24.3596 72.2119 5.19519 48.5714 5.19519C24.931 5.19519 5.7666 24.3596 5.7666 48C5.7666 71.6405 24.931 90.8049 48.5714 90.8049Z" fill="white"/>
+                                <g filter="url(#filter0_dd_955_5686)">
+                                <path d="M48.5715 0C39.078 0 29.7977 2.81515 21.9041 8.08946C14.0106 13.3638 7.85828 20.8603 4.22528 29.6312C0.59227 38.4021 -0.35829 48.0532 1.4938 57.3643C3.34589 66.6754 7.91745 75.2282 14.6304 81.9411C21.3433 88.654 29.8961 93.2256 39.2072 95.0777C48.5182 96.9298 58.1694 95.9792 66.9403 92.3462C75.7112 88.7132 83.2077 82.5609 88.482 74.6674C93.7563 66.7738 96.5715 57.4935 96.5715 48C96.5898 41.7149 95.37 35.4876 92.9818 29.6739C90.5935 23.8602 87.0835 18.5738 82.6521 14.1166C78.2208 9.65937 72.955 6.11861 67.1553 3.69648C61.3556 1.27436 55.1356 0.0182884 48.8504 0H48.5715ZM49.3851 49.6271L44.3875 66.4794H71.1187C71.2958 66.4732 71.4723 66.502 71.6383 66.564C71.8042 66.6261 71.9563 66.7203 72.0859 66.8412C72.2154 66.9621 72.3198 67.1073 72.3932 67.2686C72.4665 67.4299 72.5074 67.604 72.5134 67.7811V68.2228L70.1889 76.2421C70.0864 76.6214 69.858 76.9545 69.5413 77.1868C69.2245 77.4191 68.8381 77.5368 68.4456 77.5206H27.5352L34.3923 54.1598L26.7216 56.4843L28.465 51.138L36.1357 48.8136L45.7822 16.0387C45.8883 15.6616 46.1177 15.3309 46.4336 15.0992C46.7495 14.8675 47.1339 14.7482 47.5255 14.7603H57.8693C58.0464 14.7541 58.2229 14.7828 58.3889 14.8449C58.5549 14.907 58.7069 15.0012 58.8365 15.122C58.966 15.2429 59.0704 15.3882 59.1438 15.5495C59.2171 15.7107 59.258 15.8849 59.264 16.062V16.5036L51.1284 44.1646L58.7991 41.8402L57.172 47.4189L49.3851 49.6271Z" fill="url(#paint0_linear_955_5686)"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <filter id="filter0_dd_955_5686" x="-7.42853" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="4"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_955_5686"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="2"/>
+                                <feGaussianBlur stdDeviation="1.5"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                                <feBlend mode="normal" in2="effect1_dropShadow_955_5686" result="effect2_dropShadow_955_5686"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_955_5686" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_955_5686" x1="16.5715" y1="-2.5" x2="76.0715" y2="102" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3F68A8"/>
+                                <stop offset="1" stop-color="#2C5493"/>
+                                </linearGradient>
+                                <clipPath id="clip0_955_5686">
+                                <rect width="96" height="96" fill="white" transform="translate(0.571472)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__LTC_p">LTC</p>    
+                        </li>
+                        <li>
+                            <svg id="cryptorange__USDC" width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.285767" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4358)"/>
+                                <path d="M61.9843 55.5816C61.9843 48.4318 57.6943 45.9804 49.1143 44.9591C42.9858 44.1418 41.76 42.5077 41.76 39.6474C41.76 36.7871 43.8031 34.949 47.8886 34.949C51.5657 34.949 53.6088 36.1747 54.63 39.239C54.8345 39.8518 55.4473 40.2602 56.0602 40.2602H59.3284C60.1457 40.2602 60.7586 39.6474 60.7586 38.8306V38.6261C59.9413 34.1317 56.2641 30.659 51.5657 30.2506V25.3477C51.5657 24.5304 50.9529 23.9176 49.9316 23.7131H46.8673C46.05 23.7131 45.4372 24.326 45.2327 25.3477V30.0461C39.1042 30.8634 35.2231 34.949 35.2231 40.0563C35.2231 46.7977 39.3086 49.4531 47.8886 50.4748C53.6088 51.4961 55.4473 52.7218 55.4473 55.9905C55.4473 59.2593 52.587 61.5062 48.7059 61.5062C43.3942 61.5062 41.5556 59.2588 40.9427 56.1945C40.7388 55.3777 40.1259 54.9688 39.5131 54.9688H36.0399C35.2231 54.9688 34.6102 55.5816 34.6102 56.3989V56.6034C35.427 61.7102 38.6958 65.3873 45.4372 66.4091V71.3119C45.4372 72.1287 46.05 72.7416 47.0713 72.946H50.1356C50.9529 72.946 51.5657 72.3332 51.7702 71.3119V66.4091C57.8987 65.3873 61.9843 61.0973 61.9843 55.5816Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9008 37.809C13.9762 53.5393 22.1478 71.3121 38.082 77.0318C38.6949 77.4407 39.3078 78.2575 39.3078 78.8703V81.7307C39.3078 82.1391 39.3078 82.3435 39.1033 82.5475C38.8994 83.3648 38.082 83.7732 37.2647 83.3648C25.8249 79.6876 17.0405 70.9032 13.3634 59.4634C7.23482 40.0565 17.8578 19.4233 37.2647 13.2948C37.4692 13.0908 37.8776 13.0908 38.082 13.0908C38.8994 13.2948 39.3078 13.9076 39.3078 14.7249V17.5848C39.3078 18.6065 38.8994 19.2194 38.082 19.6278C29.7065 22.6921 22.9651 29.229 19.9008 37.809ZM57.8926 14.1118C58.0965 13.2945 58.9138 12.8861 59.7311 13.2945C70.9665 16.9716 79.9554 25.756 83.6325 37.4003C89.761 56.8072 79.1381 77.4404 59.7311 83.5689C59.5267 83.7729 59.1183 83.7729 58.9138 83.7729C58.0965 83.5689 57.6881 82.9561 57.6881 82.1388V79.2789C57.6881 78.2572 58.0965 77.6443 58.9138 77.2359C67.2894 74.1716 74.0308 67.6347 77.095 59.0547C83.0196 43.3244 74.8481 25.5516 58.9138 19.8319C58.301 19.423 57.6881 18.6062 57.6881 17.7889V14.9291C57.6881 14.5202 57.6881 14.3162 57.8926 14.1118Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_955_4358" x1="53.5221" y1="39.2727" x2="-38.1142" y2="175.418" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2775CA"/>
+                                <stop offset="1" stop-color="#00BBF9"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__USDC_p">USDC</p>
+                        </li>
+                        <li>
+                            <svg id="cryptorange__BNB" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_955_5626)">
+                                <mask id="mask0_955_5626" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="96">
+                                <path d="M0 -7.62939e-06H96V96H0V-7.62939e-06Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_955_5626)">
+                                <path d="M48 -7.62939e-06C74.5097 -7.62939e-06 96 21.4903 96 48C96 74.5097 74.5097 96 48 96C21.4903 96 0 74.5097 0 48C0 21.4903 21.4903 -7.62939e-06 48 -7.62939e-06Z" fill="url(#paint0_linear_955_5626)"/>
+                                <path d="M35.58 42.844L42.848 35.6L44.38 34.068L48.0119 30.436L60.38 42.844L67.58 35.6L48.0119 15.9999L28.38 35.6L35.58 42.844Z" fill="white"/>
+                                <path d="M40.792 47.988L48.0215 40.7585L55.2509 47.988L48.0215 55.2175L40.792 47.988Z" fill="white"/>
+                                <path d="M60.38 53.1721L48.008 65.5441L43.6639 61.2001L42.864 60.4001L35.58 53.1721L28.38 60.3721L48.0119 79.972L67.58 60.3721L60.38 53.1721Z" fill="white"/>
+                                <path d="M16 48.008L23.2295 40.7786L30.4589 48.008L23.2295 55.2375L16 48.008Z" fill="white"/>
+                                <path d="M65.5439 48.004L72.7735 40.7745L80.0029 48.004L72.7735 55.2335L65.5439 48.004Z" fill="white"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <linearGradient id="paint0_linear_955_5626" x1="75.6965" y1="108.719" x2="2.72709" y2="-14.8494" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#E9B204"/>
+                                <stop offset="1" stop-color="#F0B90B"/>
+                                </linearGradient>
+                                <clipPath id="clip0_955_5626">
+                                <rect width="96" height="96" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            <p id="cryptorange__BNB_p">BNB</p>   
+                        </li>
+                    </ul>
+                </div>
+                <div class="features__oneclick">
+                    <div class="oneclick__video">
+                        <video id="features__oneclick__video" src="./video/One click to start.mp4" muted autoplay loop></video>
+                    </div>
+                    <h3>One click to start</h3>
+                    <h4>Open <a href="https://t.me/CryptoBot">@CryptoBot</a>, go to <a href="https://t.me/CryptoBot?start=pay">Crypto Pay</a> and tap Create App to get API Token</h4>
+                </div>
+                <div class="features__payment">
+                    <div class="payment__video">
+                        <video id="features__payment__video" src="./video/Stats.mp4" muted autoplay loop></video>
+                    </div>
+                    <h3>Payment Statistics</h3>
+                    <h4>Open <a href="https://t.me/CryptoBot">@CryptoBot</a>, go to <a href="https://t.me/CryptoBot?start=pay">Crypto Pay</a> and <a href="">My Apps</a>, App Name to get Statistics</h4>
+                </div>
+                <div class="features__exchange">
+                    <div class="exchange__video">
+                        <video id="features__exchange__video" src="./video/exchange-light.mp4" muted autoplay loop></video>
+                    </div>
+                    <h3>Real-time exchange rates</h3>
+                    <h4>Request up to date currency rate with the <a href="https://help.crypt.bot/crypto-pay-api#getExchangeRates">getExchangeRates</a> API method</h4>
+                </div>
+                <div class="features__send">
+                    <div class="send__video">
+                        <video id="features__send__video" src="./video/Send coins to users.mp4" muted autoplay loop></video>
+                    </div>
+                    <h3>Send coins to users</h3>
+                    <h4>Automate payouts to users with <a href="https://help.crypt.bot/crypto-pay-api#transfer">transfer</a> API method</h4>
+                </div>
+                <div class="features__anonymous">
+                    <div class="anonymous__video">
+                        <video id="features__anonymous__video" src="./video/Anonymous payments.mp4" muted autoplay loop></video>
+                    </div>
+                    <h3>Anonymous payments</h3>
+                    <h4>Use allow_anonymous parameter in <a href="https://help.crypt.bot/crypto-pay-api#createInvoice">createInvoice</a> method to give user an option to remain private</h4>
+                </div>
+            </div><!-- features -->
+        </div><!-- content -->
+
+        <div class="quickStart" id="quickStart"><!-- quickStart -->
+            <div class="content"><!-- content -->
+                <h2>Quick start using <span>Crypto Pay</span></h2>
+                <div class="quickStart__grid">
+                    <div class="quickStart__TextLeft" id="Text1">
+                        <div class="quickStart__p">
+                            <span class="dot">1</span> 
+                            <h3>Authorizing your app</h3>
+                        </div>
+                        
+                        <ol>
+                            <li>Open <a href="https://t.me/CryptoBot">@CryptoBot</a></li>
+                            <li>Go to <a href="">Crypto Pay</a></li>
+                            <li>Tap <a href="">Create App </a></li>
+                            <li>Get <a href="">API Token</a></li>
+                        </ol>
+                            
+                    </div>
+                    <div class="quickStart__Img">
+                        <img src="./img/quick-1.webp" alt="">
+                    </div>
+                    <div class="quickStart__Img">
+                        <img src="./img/quick-2.webp" alt="">
+                    </div>
+                    <div class="quickStart__TextRight" id="Text2">
+                        <div class="quickStart__p">
+                            <span class="dot">2</span> 
+                            <h3>Crypto Pay API Request</h3>
+                        </div>
+                        
+                        <h4>Requests are only served over HTTPS <br>To pass parameters use:</h4>
+                        <ul>
+                            <li><a href="">URL query string</a></li>
+                            <li><a href="">application/json </a></li>
+                            <li><a href="">application/x-www-form-urlencoded</a></li>
+                            <li><a href="">multipart/form-data</a></li>
+                        </ul>
+                    </div>
+                    <div class="quickStart__TextLeft" id="Text3">
+                        <div class="quickStart__p">
+                            <span class="dot">3</span> 
+                            <h3>Getting updates</h3>
+                        </div>
+                        
+                        <h4>There are two ways of receiving <br>updates for your app:</h4>
+                        <ul>
+                            <li><a href="">getInvoices</a> <span>method to get a list of created invoices.</span></li>
+                            <li><a href="">Webhooks</a> <span>to receive updates in realtime.</span></li>
+                        </ul>
+                    </div>
+                    <div class="quickStart__Img">
+                        <img src="./img/quick-3.webp" alt="">
+                    </div>
+                </div>
+            </div><!-- content -->
+            
+            
+        </div><!-- quickStart -->
+        
+        <div class="api">
+            <div class="content"><!-- content -->
+                <div class="apiBlock">
+                    <h2>Crypto Pay API</h2>
+                    <h4>Explore available methods and types <br>and integrate them in any programming language.</h4>
+                    <button>Open API Docs</button>
+                </div>
+                <div class="apiBlock mobile">
+                    <h2>Crypto Pay API</h2>
+                    <h4>Explore available methods and types and integrate them in any programming language.</h4>
+                    <button>Open API Docs</button>
+                </div>
+                <div class="joinCommunity">
+                    <h2>Join dev community</h2>
+                    <h4>Connect with bot developers and explore the possibilities <br>our crypto payments service unlocks.</h4>
+                    <div class="apis">
+                        <ul>
+                            <li><a href="https://github.com/Foile/crypto-pay-api">
+                                <svg width="113" height="104" viewBox="0 0 113 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_dd_955_4263)">
+                                    <rect x="8.6001" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4263)"/>
+                                    <path d="M87.082 26.9588L59.5214 10.9556C57.7832 9.96563 55.5201 9.96563 53.7682 10.9556L25.9132 26.9588C24.1195 27.9906 22.8501 29.93 22.8501 32.0044V63.9681C22.8501 66.0425 24.1526 67.9825 25.9463 69.02L33.3057 73.2C36.8232 74.9325 38.0663 74.9325 39.667 74.9325C44.8751 74.9325 47.8501 71.7831 47.8501 66.29V34.7338C47.8501 34.2881 47.6182 33.625 47.1807 33.625H43.6663C43.2213 33.625 42.2251 34.2881 42.2251 34.7331V66.2894C42.2251 68.7244 40.0226 71.1475 35.9063 69.0894L28.302 64.7063C28.037 64.5625 27.8501 64.2731 27.8501 63.9681V32.0044C27.8501 31.7031 28.197 31.4006 28.4638 31.2463L56.2288 15.2706C56.4882 15.1238 56.8695 15.1238 57.1282 15.2706L84.5545 31.2425C84.817 31.4006 84.7245 31.6938 84.7245 32.0044V63.9681C84.7245 64.2731 84.8388 64.57 84.5795 64.7169L57.0257 80.7019C56.7895 80.8438 56.4963 80.8438 56.2376 80.7019L49.1707 76.4838C48.9576 76.36 48.7045 76.3156 48.5001 76.43C46.5338 77.5444 46.1713 77.6925 44.327 78.3319C43.8732 78.49 43.2038 78.7644 44.5832 79.5375L53.832 85.0088C54.715 85.5188 55.7167 85.7873 56.7364 85.7875C57.7626 85.7875 58.7676 85.5213 59.6532 85.0088L87.0813 69.02C88.8751 67.975 89.7251 66.0425 89.7251 63.9681V32.0044C89.7251 29.93 88.8751 27.9956 87.082 26.9588ZM65.2938 58.9031C57.9651 58.9031 56.3507 56.8813 55.8126 53.2369C55.7501 52.8444 55.417 52.375 55.0176 52.375H51.4357C50.9926 52.375 50.6363 52.9125 50.6363 53.3538C50.6363 58.02 53.1732 63.6738 65.2945 63.6738C74.0688 63.6738 79.0995 60.2644 79.0995 54.2306C79.0995 48.2481 75.0576 46.6781 66.5482 45.5519C57.947 44.415 57.0732 43.8406 57.0732 41.8256C57.0732 40.1644 57.8132 37.9488 64.182 37.9488C69.8726 37.9488 71.9701 39.17 72.8332 43.0056C72.907 43.3663 73.2363 43.625 73.6082 43.625H77.2045C77.4257 43.625 77.637 43.5356 77.792 43.3775C77.942 43.2075 78.0213 42.9944 78.0013 42.7656C77.4445 36.1606 73.0563 33.0825 64.1813 33.0825C56.287 33.0825 51.5776 36.4163 51.5776 42.0044C51.5776 48.0656 56.2632 49.7406 63.8413 50.49C72.907 51.3788 73.612 52.7038 73.612 54.4869C73.612 57.5838 71.1257 58.9031 65.2938 58.9031Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_dd_955_4263" x="0.600098" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset/>
+                                    <feGaussianBlur stdDeviation="4"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_955_4263"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="2"/>
+                                    <feGaussianBlur stdDeviation="1.5"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                                    <feBlend mode="normal" in2="effect1_dropShadow_955_4263" result="effect2_dropShadow_955_4263"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_955_4263" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear_955_4263" x1="9" y1="4" x2="97" y2="102.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#83CD29"/>
+                                    <stop offset="1" stop-color="#74BE1A"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                                <h4>crypto-pay-api</h4>
+                            </a></li>
+                            <li>
+                                <a href="https://github.com/WinoGarcia/CryptoPay">
+                                    <svg width="113" height="104" viewBox="0 0 113 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dd_955_4267)">
+                                        <rect x="8.80029" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4267)"/>
+                                        <path d="M24.0873 61.1305C23.7574 61.139 23.4292 61.0818 23.1216 60.9622C22.8141 60.8426 22.5334 60.663 22.2959 60.4339C22.0605 60.2128 21.8729 59.9459 21.7447 59.6496C21.6165 59.3532 21.5503 59.0337 21.5503 58.7108C21.5503 58.388 21.6165 58.0685 21.7447 57.7721C21.8729 57.4758 22.0605 57.2089 22.2959 56.9878C22.5313 56.7542 22.8111 56.57 23.1187 56.4461C23.4264 56.3222 23.7557 56.2611 24.0873 56.2663C24.421 56.2594 24.7527 56.3197 25.0626 56.4437C25.3725 56.5677 25.6543 56.7527 25.8912 56.9878C26.1299 57.2069 26.3205 57.4732 26.4508 57.7698C26.5812 58.0664 26.6485 58.3869 26.6485 58.7108C26.6485 59.0348 26.5812 59.3553 26.4508 59.6519C26.3205 59.9485 26.1299 60.2148 25.8912 60.4339C25.6523 60.6645 25.3695 60.845 25.0597 60.9646C24.7499 61.0843 24.4193 61.1407 24.0873 61.1305ZM52.2156 60.7324H47.6374L35.5949 41.7232C35.293 41.252 35.0388 40.7519 34.836 40.2303H34.7241C34.856 41.4073 34.9058 42.592 34.8733 43.7759V60.7324H30.8177V34.8684H35.6944L47.401 53.4298C47.8987 54.2011 48.2097 54.6739 48.359 55.0222H48.4212C48.2804 53.8667 48.2222 52.7026 48.247 51.5388V34.8684H52.2778L52.2156 60.7324ZM71.9215 60.7324H57.7641V34.8684H71.3617V38.5135H61.9441V45.841H70.6525V49.4612H61.9441V57.1122H71.8966L71.9215 60.7324ZM92.0504 38.5135H84.7975V60.7324H80.605V38.5135H73.377V34.8684H92.038L92.0504 38.5135Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_dd_955_4267" x="0.800293" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_955_4267"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_955_4267" result="effect2_dropShadow_955_4267"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_955_4267" result="shape"/>
+                                        </filter>
+                                        <linearGradient id="paint0_linear_955_4267" x1="21" y1="3" x2="81.5" y2="96" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6B3FA0"/>
+                                        <stop offset="1" stop-color="#552D85"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h4>CryptoPay</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/klev-o/crypto-pay-api">
+                                    <svg width="112" height="104" viewBox="0 0 112 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dd_955_4271)">
+                                        <rect x="8" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4271)"/>
+                                        <path d="M43.5103 52.7392C42.3648 53.8108 41.0928 54.2532 39.6919 54.7089C38.2911 55.1653 36.5084 55.0711 34.3407 55.0711H29.4279L28.0663 62.9278H22.3301L27.4487 36.2149H38.4796C41.7983 36.2149 44.219 37.1695 45.7408 38.9113C47.2627 40.6531 47.7199 43.1257 47.1134 46.2471C46.8628 47.5333 46.4409 48.7291 45.8453 49.7945C45.2282 50.8937 44.44 51.8877 43.5103 52.7392ZM60.2538 55.0711L62.5173 43.7416C62.775 42.4154 62.6807 41.4302 62.2337 40.9486C61.7859 40.4662 60.8336 40.1432 59.3778 40.1432H54.8287L51.8974 55.0711H46.2059L51.3246 29.1438H57.016L55.6553 36.2149H60.7252C63.9158 36.2149 66.1157 36.8552 67.3264 37.9677C68.5372 39.0802 68.9002 40.6044 68.4162 43.0966L66.0348 55.0711H60.2538ZM91.8843 46.2888C91.6344 47.5749 91.2117 48.7503 90.617 49.8149C90.0214 50.8811 89.2436 51.8561 88.2827 52.7392C87.1372 53.8108 85.8644 54.2532 84.4644 54.7089C83.0643 55.1653 81.28 55.0711 79.1124 55.0711H74.1995L72.8387 62.9278H67.1025L72.2204 36.2149H83.2521C86.5708 36.2149 88.9914 37.1695 90.5125 38.9113C92.0328 40.6531 92.4908 43.1681 91.8843 46.2888ZM81.0781 40.1432H77.1489L75.0064 51.1427H78.4964C80.8078 51.1427 82.5316 50.9148 83.663 50.0427C84.7959 49.1722 85.5588 47.8209 85.9556 45.7836C86.3358 43.8265 86.163 42.2999 85.437 41.4954C84.7103 40.6909 83.2576 40.1432 81.0781 40.1432ZM36.3064 40.1432H32.3765L30.234 51.1427H33.7231C36.0354 51.1427 37.7584 50.9148 38.8905 50.0427C40.0227 49.1722 40.7864 47.8209 41.1823 45.7836C41.5626 43.8265 41.3898 42.2999 40.6638 41.4954C39.9378 40.6909 38.4859 40.1432 36.3064 40.1432Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_dd_955_4271" x="0" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_955_4271"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_955_4271" result="effect2_dropShadow_955_4271"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_955_4271" result="shape"/>
+                                        </filter>
+                                        <linearGradient id="paint0_linear_955_4271" x1="17.5" y1="4" x2="86" y2="100" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6181B6"/>
+                                        <stop offset="1" stop-color="#5979AE"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h4>crypto-pay-api</h4>   
+                                </a>
+                            </li>
+                        </ul>
+                        <ul id="apis__ul2">
+                            <li>
+                                <a href="https://github.com/layerqa/aiocryptopay">
+                                    <svg width="113" height="104" viewBox="0 0 113 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dd_1326_244)">
+                                        <rect x="8.2002" width="96" height="96" rx="48" fill="url(#paint0_linear_1326_244)"/>
+                                        <path d="M55.8463 17.9192C53.3922 17.9308 51.0498 18.1395 48.9875 18.5045C42.9134 19.5775 41.8114 21.8234 41.8114 25.966V31.4362H56.1642V33.2596H36.4243C32.2532 33.2596 28.6006 35.7665 27.4579 40.5375C26.1396 46.0041 26.0815 49.4161 27.4579 55.1246C28.478 59.3741 30.9146 62.4013 35.0863 62.4013H40.0217V55.8436C40.0217 51.1058 44.1201 46.9272 48.9881 46.9272H63.3247C67.3156 46.9272 70.5008 43.6408 70.5008 39.6336V25.9666C70.5008 22.0763 67.2191 19.1543 63.3247 18.5051C60.8579 18.0947 58.2998 17.9081 55.8463 17.9192ZM48.0842 22.3187C49.5664 22.3187 50.7778 23.5492 50.7778 25.0628C50.7778 26.57 49.567 27.7888 48.0842 27.7888C46.5962 27.7888 45.3913 26.57 45.3913 25.0628C45.3907 23.5492 46.5962 22.3187 48.0842 22.3187Z" fill="#386F9F"/>
+                                        <path d="M72.2907 33.2594V39.6334C72.2907 44.574 68.101 48.7329 63.3243 48.7329H48.9877C45.0607 48.7329 41.8115 52.0943 41.8115 56.0271V69.6952C41.8115 73.5844 45.1933 75.8728 48.9877 76.9882C53.5307 78.3233 57.8878 78.5651 63.3243 76.9882C66.9373 75.9414 70.5004 73.8361 70.5004 69.6952V64.2245H56.1644V62.4005H77.6777C81.8488 62.4005 83.4042 59.4913 84.8551 55.1238C86.3535 50.6278 86.289 46.3039 84.8551 40.5367C83.8239 36.3836 81.8552 33.2588 77.6777 33.2588H72.2907V33.2594ZM64.227 67.8712C65.7156 67.8712 66.9205 69.0901 66.9205 70.5985C66.9205 72.1109 65.715 73.3414 64.227 73.3414C62.7448 73.3414 61.534 72.1109 61.534 70.5985C61.534 69.0901 62.7448 67.8712 64.227 67.8712Z" fill="#FFCF46"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_dd_1326_244" x="0.200195" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1326_244"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_1326_244" result="effect2_dropShadow_1326_244"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1326_244" result="shape"/>
+                                        </filter>
+                                        <linearGradient id="paint0_linear_1326_244" x1="8" y1="1.5" x2="88.5" y2="103.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#242429"/>
+                                        <stop offset="1" stop-color="#18181D"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h4>aiocryptopay</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/arthurshafikov/cryptobot-sdk-golang">
+                                    <svg width="113" height="104" viewBox="0 0 113 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dd_955_4279)">
+                                        <rect x="8.3999" width="96" height="96" rx="48" fill="url(#paint0_linear_955_4279)"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3663 41.9198C21.2052 41.9198 21.1655 41.8389 21.2457 41.7189L22.0896 40.6336C22.1692 40.5129 22.3707 40.4327 22.5312 40.4327H36.8758C37.0369 40.4327 37.0767 40.5534 36.9965 40.674L36.3136 41.7189C36.2334 41.8389 36.0325 41.9595 35.9118 41.9595L21.3663 41.9198ZM15.2989 45.6158C15.1384 45.6158 15.098 45.5362 15.1782 45.4149L16.0222 44.3303C16.1024 44.2096 16.3033 44.1294 16.4644 44.1294H34.7861C34.9466 44.1294 35.0274 44.2501 34.987 44.3707L34.6655 45.3347C34.6257 45.4958 34.4646 45.576 34.3041 45.576L15.2989 45.6158ZM25.0219 49.3125C24.8615 49.3125 24.8217 49.1918 24.9019 49.0712L25.4641 48.0668C25.545 47.9461 25.7055 47.8261 25.8666 47.8261H33.9017C34.0628 47.8261 34.143 47.9461 34.143 48.1072L34.0635 49.0712C34.0635 49.2323 33.9024 49.3529 33.7817 49.3529L25.0219 49.3125ZM66.7292 41.1965C64.1973 41.8395 62.4697 42.3215 59.9789 42.9639C59.3756 43.125 59.3358 43.1648 58.8134 42.5622C58.2108 41.8793 57.7686 41.4371 56.9253 41.0354C54.3934 39.7903 51.9424 40.1516 49.6525 41.6387C46.9204 43.4061 45.5143 46.0176 45.554 49.2721C45.5938 52.4868 47.8041 55.1387 50.9784 55.5809C53.7105 55.9422 56.0011 54.9776 57.809 52.929C58.1703 52.4868 58.4919 52.0048 58.8936 51.442H51.1389C50.2956 51.442 50.0947 50.9195 50.3758 50.2367C50.8982 48.991 51.8622 46.902 52.4244 45.8571C52.5457 45.6158 52.8268 45.214 53.4294 45.214H68.0545C67.9749 46.2993 67.9749 47.3839 67.8138 48.4692C67.3716 51.3617 66.287 54.0136 64.5189 56.3439C61.6257 60.1613 57.8494 62.5314 53.0674 63.1745C49.1301 63.6969 45.4738 62.9332 42.2598 60.5226C39.2863 58.2725 37.5991 55.2991 37.1569 51.6031C36.6345 47.2235 37.92 43.2855 40.5718 39.8301C43.4246 36.0936 47.2015 33.7228 51.8224 32.8789C55.5993 32.196 59.2151 32.6382 62.4697 34.8479C64.5991 36.254 66.1259 38.1826 67.1303 40.5129C67.3716 40.8749 67.2112 41.0758 66.7286 41.1958L66.7292 41.1965Z" fill="white"/>
+                                        <path d="M80.0286 63.4159C76.3723 63.335 73.037 62.2908 70.2246 59.8796C67.8539 57.8311 66.3675 55.219 65.8855 52.1249C65.1622 47.5849 66.4073 43.5667 69.14 39.9913C72.073 36.1335 75.6086 34.1247 80.3906 33.2807C84.4884 32.5581 88.3462 32.9598 91.8414 35.33C95.0156 37.4998 96.984 40.4328 97.5064 44.29C98.1893 49.7144 96.6227 54.1344 92.8855 57.9113C90.2337 60.6029 86.9792 62.2908 83.2427 63.0539C82.1581 63.2548 81.0728 63.2952 80.0286 63.4159ZM89.5913 47.1831C89.5515 46.6607 89.5515 46.259 89.4706 45.8572C88.748 41.8794 85.091 39.6293 81.2743 40.5137C77.5372 41.357 75.1266 43.7278 74.2429 47.5047C73.5196 50.6385 75.0464 53.8128 77.9389 55.0983C80.1493 56.0629 82.3589 55.9423 84.4884 54.8577C87.6627 53.2102 89.3904 50.6385 89.5913 47.1831Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_dd_955_4279" x="0.399902" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_955_4279"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_955_4279" result="effect2_dropShadow_955_4279"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_955_4279" result="shape"/>
+                                        </filter>
+                                        <linearGradient id="paint0_linear_955_4279" x1="19" y1="4" x2="83.5" y2="96" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00ACD7"/>
+                                        <stop offset="1" stop-color="#00A8D3"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h4>cryptobot-sdk <br>-golang</h4>  
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button>Open Devs chat</button>
+                </div>
+            </div><!-- content -->
+        </div>
+
+        <footer>
+            <div class="content">
+                <div class="footer__main">
+                    <div class="icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_11590_1139)">
+                            <path d="M0 0H64V64H0V0Z" fill="#44A3DD"/>
+                            <path d="M12.5003 23H25.6761C26.6657 23 27.576 23.5414 28.0485 24.4109L39.7799 46H24.0819C23.0923 46 22.182 45.4586 21.7095 44.5891L11.1823 25.2162C10.7868 24.4883 11.0562 23.5776 11.7841 23.182C12.0039 23.0626 12.2501 23 12.5003 23Z" fill="#BEE5F7"/>
+                            <path d="M51.5909 23C51.8411 23 52.0873 23.0626 52.3071 23.182C53.0129 23.5656 53.2877 24.4336 52.943 25.1495L52.9089 25.2162L42.3817 44.5891C41.9244 45.4306 41.0572 45.9647 40.1048 45.9983L40.0093 46H24.5559H24.0817L23.986 45.9983C23.4883 45.9807 23.0138 45.8264 22.6089 45.5629C22.8117 45.6794 23.0413 45.7544 23.2862 45.7765C23.3122 45.7789 23.5221 45.7983 23.7557 45.7356C23.8545 45.7091 24.2191 45.624 24.6055 45.2626C24.721 45.1545 24.8826 44.9225 25.0902 44.5664L36.0427 24.4109C36.4999 23.5694 37.3672 23.0353 38.3196 23.0017L38.4151 23H51.5909Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_11590_1139">
+                            <rect width="64" height="64" rx="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    
+
+                    <ul>
+                        <li><a href="#UseCases">Use cases</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#quickStart">How to start</a></li>
+                    </ul>
+                    <div class="footer__main__right">
+                        
+                        <button>Get started</button>
+                    </div>
+                </div>
+                <h4>©2023 Crypto Bot</h4>
+            </div>
+        </footer>
+        
+
+
+    </div><!-- container -->
+    
+    
+    
+
+</body>
+</html>
